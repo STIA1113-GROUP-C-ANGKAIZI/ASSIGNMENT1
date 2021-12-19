@@ -1,0 +1,170 @@
+package Beauty;
+
+import java.util.Scanner;
+
+public class Jewellery {
+
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
+  Scanner sc = new Scanner (System.in);
+  
+  
+  int gold = 240; 
+  int budget;
+  int wage = 250;
+  int delivery = 30;
+  int packaging = 15;
+  int insurance = 50;
+  double gram;
+  double ring = 1.82;
+  double earring = 1.2;
+  double necklace = 3.67;
+  double locket = 2.87;
+  double bracelet = 2.7;
+  double total;
+  double total2;
+  double total3;
+  double total4;
+      
+  System.out.println("==WELCOME TO GOLD JEWELLERY SHOP==\n");
+  
+System.out.println("Enter your name: ");
+String name = sc.nextLine();
+
+System.out.println("Enter your e-mail: ");
+String email = sc.nextLine();
+
+System.out.println("Enter your address: ");
+String address = sc.nextLine();
+
+System.out.println("Enter your phone number: ");
+String number = sc.nextLine();
+
+System.out.println("Payment via bank: ");
+String bank = sc.nextLine();
+System.out.println("\n");
+
+System.out.println("Ring: 1.82g\n" + "Ear Ring: 1.2g\n" + "Necklace: 3.67g\n" + "Locket: 2.87g\n" + "Bracelet: 2.7g\n");
+  
+  System.out.println("Please choose your budget range and gram.");
+  System.out.println("Note: Less than 5g need to pay wage cost");
+  System.out.println("\n");
+  
+  System.out.println("Your budget range: ");
+  budget =sc.nextInt();
+
+  System.out.println("Your gram: ");
+  gram = sc.nextDouble();
+  System.out.println("\n");
+
+System.out.println("Ring= 1.82g\n" + "Ear Ring= 1.2g\n");
+
+total = (240 * 1.82) + (240 * 1.2);
+System.out.println("Total gold price is RM " + total);
+System.out.println("Wage:RM250\n" + "Delivery:RM30\n" + "Packaging:RM15\n" + "Insurance:RM50");
+
+System.out.println("--------------------");
+total2 = total + 250 + 30 + 15 + 50;
+System.out.println("TOTAL PAYMENT: RM" + total2);
+System.out.println("--------------------");
+System.out.println("\n");
+
+System.out.println("OR");
+System.out.println("\n");
+
+  System.out.println("Your budget range: ");
+  budget =sc.nextInt();
+
+  System.out.println("Your gram: ");
+  gram = sc.nextDouble();
+  System.out.println("\n");
+
+System.out.println("Necklace= 3.67g\n" + "Locket= 2.87g\n" + "Bracelet= 2.7g\n");
+
+total3 = (240 * 3.67) + (240 * 2.87) + (240 * 2.7);
+System.out.println("Total gold price is RM" + total3);
+System.out.println( "Delivery:RM30\n" + "Packaging:RM15\n" + "Insurance:RM50");
+
+System.out.println("--------------------");
+total4 = total3 + 30 + 15 + 50;
+System.out.println("TOTAL PAYMENT: RM" + total4);
+System.out.println("--------------------");
+System.out.println("\n");
+
+System.out.println("THANK YOU FOR YOUR ORDER!");
+
+
+
+
+  }
+
+}
+
+Output:
+==WELCOME TO GOLD JEWELLERY SHOP==
+
+Enter your name: 
+Sera
+Enter your e-mail: 
+sera@gmail.com
+Enter your address: 
+205 jln molek 1
+Enter your phone number: 
+0197320295
+Payment via bank: 
+Maybank
+
+
+Ring: 1.82g
+Ear Ring: 1.2g
+Necklace: 3.67g
+Locket: 2.87g
+Bracelet: 2.7g
+
+Please choose your budget range and gram.
+Note: Less than 5g need to pay wage cost
+
+
+Your budget range: 
+1100
+Your gram: 
+4
+
+
+Ring= 1.82g
+Ear Ring= 1.2g
+
+Total gold price is RM 724.8
+Wage:RM250
+Delivery:RM30
+Packaging:RM15
+Insurance:RM50
+--------------------
+TOTAL PAYMENT: RM1069.8
+--------------------
+
+
+OR
+
+
+Your budget range: 
+2500
+Your gram: 
+10
+
+
+Necklace= 3.67g
+Locket= 2.87g
+Bracelet= 2.7g
+
+Total gold price is RM2217.6
+Delivery:RM30
+Packaging:RM15
+Insurance:RM50
+--------------------
+TOTAL PAYMENT: RM2312.6
+--------------------
+
+
+THANK YOU FOR YOUR ORDER!
+ 
