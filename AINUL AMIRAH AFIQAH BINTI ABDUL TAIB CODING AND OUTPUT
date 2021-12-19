@@ -1,0 +1,302 @@
+package Assignment1;
+import java.util.Scanner;
+public class saimen4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		double price_Niancinamide = 30;
+		double price_Zinc = 25;
+		double price_AHA = 35;
+		double price_Alpha= 45;
+		double price_Beta = 35;
+		double price_charge = 20;
+		double price_Niancinamide2 = 45;
+		double price_Zinc2 = 40;
+		double price_AHA2 = 60;
+		double price_Alpha2= 60;
+		double price_Beta2 = 60;
+		double price_Hyalucronic2= 45;
+		double amount, amount2, amount3, amount4, amount5;
+		double price1 , price2, price3, price4;
+		double finalprice, finalprice2; 
+		double total;
+		double size, size2;
+		
+		System.out.println(" Welcome to The Ordinary website, Your House of beauty!");
+		System.out.println();
+		
+		System.out.print("Enter your name : ");
+		String name = sc.nextLine();
+		System.out.println();
+		
+		System.out.print("Enter your email : ");
+		String email = sc.nextLine();
+		System.out.println();
+		
+		System.out.print("Enter your phone number : ");
+		String number = sc.nextLine();
+		System.out.println();
+		
+		System.out.print("Enter your address : ");
+		String address = sc.nextLine();
+		System.out.println();
+		
+		System.out.println("Welcome to The Ordinary House of Beauty, " + name +"!");
+		System.out.println();
+		
+		System.out.println("Before you proceed,");
+		System.out.println("We would like to inform that ");
+		System.out.println("You can add only two ingredient into your Serum.");
+		System.out.println("You will be charge RM20 if you add more than two ingredients into you Serum");
+		System.out.println();
+		
+		System.out.println("Here is the ingredients that you can add into your Serum and the price list");
+		System.out.println("Happy Shopping!");
+		System.out.println();
+		
+		System.out.println();
+		System.out.println("Please select your order size : ");
+		size = sc.nextDouble();
+		System.out.println();
+		System.out.println("Great! Now choose your ingredients for your 30ml Serum.");
+		System.out.println();
+		System.out.println("INGREDIENTS           QUANTITY    PRICE");
+		System.out.println("Niancinamide 10%         1          30");
+		System.out.println("Zinc 1%                  1          25");
+		System.out.println("Alpha Arbutin 2%         1          45");
+		System.out.println("Beta Hydroxy 2%          1          35");
+		System.out.println("Hyalucronic Acid 2%      1          30");
+		System.out.println("Alpha Hydroxy Acid 30%   1          35");
+		System.out.println();
+		System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+		System.out.println();
+		
+		System.out.println("Please enter the first ingredient you want to add : ");
+		String ingredient = sc.next();
+		System.out.println("Enter the quantity of " + ingredient + " : " );
+		amount = sc.nextDouble();
+		System.out.println();
+		double niancinamide = amount*price_Niancinamide;
+		System.out.println("Price for 2 Niancinamide 10 % is RM" + (niancinamide)); 
+		
+		System.out.println("Please enter the second ingredient you want to add : ");
+		String ingredient2 = sc.next();
+		System.out.println("Enter the quantity of " + ingredient2 + " : " );
+		amount2 = sc.nextDouble();
+		System.out.println();
+		double zinc = amount2*price_Zinc;
+		System.out.println("Price for 1 Zinc 1% is RM" + (zinc)); 
+		
+		
+		System.out.println("Do you want to add other ingredients? : " );
+		String No = sc.next();
+		System.out.println();
+		double total_price_30 = niancinamide + zinc;
+		System.out.println("============================================================================");
+		System.out.println();
+		System.out.println("Your total price for your 30ml Serum is " + (total_price_30));
+		System.out.println();
+		System.out.print("==============================================================================");
+		System.out.println();
+		
+		
+		System.out.print("Do you want to add new order or proceed to payment? : " );
+		String Order= sc.next();
+		System.out.println();
+		
+		System.out.println("Lets continue shopping! Please select your second order size : ");
+		size2 = sc.nextDouble();
+		System.out.println();
+		System.out.println("Great! Now choose your ingredients for your 60ml Serum.");
+		System.out.println();
+		System.out.println("INGREDIENTS           QUANTITY    PRICE");
+		System.out.println("Niancinamide 10%         1          45");
+		System.out.println("Zinc 1%                  1          40");
+		System.out.println("Alpha Arbutin 2%         1          60");
+		System.out.println("Beta Hydroxy 2%          1          60");
+		System.out.println("Hyalucronic Acid 2%      1          45");
+		System.out.println("Alpha Hydroxy Acid 30%   1          60");
+		System.out.println();
+		
+		System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+		System.out.println();
+		
+		System.out.println("Please enter the first ingredient you want to add : ");
+		String ingredient3 = sc.next();
+		System.out.println("Enter the quantity of " + ingredient3 + " : " );
+		amount3 = sc.nextDouble();
+		System.out.println();
+		double alpha = amount3*price_Alpha2;
+		System.out.println("Price for 2 Alpha Arbutin 2% is RM" + (alpha)); 
+		
+		System.out.println("Please enter the second ingredient you want to add : ");
+		String ingredient4 = sc.next();
+		System.out.println("Enter the quantity of " + ingredient4 + " : " );
+		amount4 = sc.nextDouble();
+		System.out.println();
+		double hyalucronic = amount4*price_Hyalucronic2;
+		System.out.println("Price for 1 Hyalucronic Acid 2% is RM" + (hyalucronic)); 
+		
+		
+		System.out.println("Do you want to add other ingredients? : " );
+		String Yes = sc.next();
+		System.out.println();
+		
+		System.out.print("You will be charge RM20 for adding more than two ingredients. Proceed? : ");
+		String Yes2 = sc.next();
+		System.out.println();
+		
+		System.out.println("Please enter the third ingredient you want to add : ");
+		String ingredient5 = sc.next();
+		System.out.println("Enter the quantity of " + ingredient5 + " : " );
+		amount5 = sc.nextDouble();
+		System.out.println();
+		double aha = amount5*price_AHA2;
+		System.out.println("Price for 1 Alpha Hydroxy Acid 30% is RM" + (aha)); 
+		
+		double total_price_60 = alpha+hyalucronic+aha+price_charge;
+		System.out.println("============================================================================");
+		
+		System.out.println();
+		System.out.println("Your total price for your 60ml Serum is RM" + (total_price_60));
+		System.out.println();
+		System.out.print("==============================================================================");
+		System.out.println();
+		
+		System.out.print("Do you want to add new order or proceed to payment? : " );
+		String payment= sc.next();
+		System.out.println();
+		double total_price = total_price_30 + total_price_60 + price_charge;
+		System.out.print("Your total price for your 2 bottles of Custom Serum is RM" + (total_price));
+		System.out.println();
+	
+		
+		System.out.print("************************************************************************" );
+		System.out.println();
+		System.out.print("Choose your payment methtod :  " );
+		String Maybank= sc.next();
+		System.out.println("Delivery : Free Delivery " );
+		System.out.println();
+		System.out.println("Thank You for purchasing from us!");
+		System.out.println("We will send the receipt and the tracking number via email!");
+		System.out.println("You will get your order after 14days of working");
+		
+	}
+
+}
+ 
+OUTPUT:
+
+
+ Welcome to The Ordinary website, Your House of beauty!
+
+Enter your name : Mira
+
+Enter your email : qnamiyaa88@gamil.com
+
+Enter your phone number : 0138689142
+
+Enter your address : NO 20 Tman Berlian Loeong 1 94300 Kapit Sarawak.
+
+Welcome to The Ordinary House of Beauty, Mira!
+
+Before you proceed,
+We would like to inform that 
+You can add only two ingredient into your Serum.
+You will be charge RM20 if you add more than two ingredients into you Serum
+
+Here is the ingredients that you can add into your Serum and the price list
+Happy Shopping!
+
+
+Please select your order size : 
+30
+
+Great! Now choose your ingredients for your 30ml Serum.
+
+INGREDIENTS           QUANTITY    PRICE
+Niancinamide 10%         1          30
+Zinc 1%                  1          25
+Alpha Arbutin 2%         1          45
+Beta Hydroxy 2%          1          35
+Hyalucronic Acid 2%      1          30
+Alpha Hydroxy Acid 30%   1          35
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Please enter the first ingredient you want to add : 
+Niancinamide
+Enter the quantity of Niancinamide : 
+2
+
+Price for 2 Niancinamide 10 % is RM60.0
+Please enter the second ingredient you want to add : 
+Zinc
+Enter the quantity of Zinc : 
+1
+
+Price for 1 Zinc 1% is RM25.0
+Do you want to add other ingredients? : 
+No
+
+============================================================================
+
+Your total price for your 30ml Serum is 85.0
+
+==============================================================================
+Do you want to add new order or proceed to payment? : Order
+
+Lets continue shopping! Please select your second order size : 
+60
+
+Great! Now choose your ingredients for your 60ml Serum.
+
+INGREDIENTS           QUANTITY    PRICE
+Niancinamide 10%         1          45
+Zinc 1%                  1          40
+Alpha Arbutin 2%         1          60
+Beta Hydroxy 2%          1          60
+Hyalucronic Acid 2%      1          45
+Alpha Hydroxy Acid 30%   1          60
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Please enter the first ingredient you want to add : 
+Arbutin
+Enter the quantity of Arbutin : 
+2
+
+Price for 2 Alpha Arbutin 2% is RM120.0
+Please enter the second ingredient you want to add : 
+Hyalucronic
+Enter the quantity of Hyalucronic : 
+1
+
+Price for 1 Hyalucronic Acid 2% is RM45.0
+Do you want to add other ingredients? : 
+Yes
+
+You will be charge RM20 for adding more than two ingredients. Proceed? : Yes
+
+Please enter the third ingredient you want to add : 
+AHA
+Enter the quantity of AHA : 
+2
+
+Price for 1 Alpha Hydroxy Acid 30% is RM120.0
+============================================================================
+
+Your total price for your 60ml Serum is RM305.0
+
+==============================================================================
+Do you want to add new order or proceed to payment? : NO
+
+Your total price for your 2 bottles of Custom Serum is RM410.0
+************************************************************************
+Choose your payment methtod :  Online Transfer
+Delivery : Free Delivery 
+
+Thank You for purchasing from us!
+We will send the receipt and the tracking number via email!
+You will get your order after 14days of working
