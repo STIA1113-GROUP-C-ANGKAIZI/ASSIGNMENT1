@@ -1,0 +1,193 @@
+package assignment1;
+import java.util.Scanner;
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String un, date1, date2, suppliername1, suppliername2, suppliercode1, suppliercode2, dn, dn2, reason;
+		int pw, q1, q2, barcode1, barcode2, barcode3, barcode4;
+		Scanner scan = new Scanner (System.in);
+		
+		int bq1 = 20;
+		q2 = 10;
+		
+		System.out.println("~WELCOME TO FAST COUNT~");
+		System.out.println("Please enter your username and password.");
+		System.out.println("Username: ");
+		un = scan.nextLine();
+		System.out.println("Password: ");
+		pw = scan.nextInt();
+		System.out.println("Login Sucessfully");
+		
+		System.out.println("User: " + un);
+		
+		System.out.println("\n\"Item\"");
+		System.out.println("Item Barcode: ");
+		barcode1 = scan.nextInt();
+		
+		System.out.println("Item Name: Perfume Lipstick"); // barcode = 20020200
+		System.out.println("Category: Lipstick");
+		System.out.println("Colour: Neon Red");
+		System.out.println("Supplier: Princess Production");
+		System.out.println("UOM: PCS");
+		System.out.println("Unit Cost:");
+		System.out.println("Unit Price: RM120");
+		System.out.println("Balance Quantity: 20"); //bq1
+		
+		
+		System.out.println("\n\"Good Received Note\"");
+		System.out.println("Document Number: "); //dn
+		dn = scan.next();
+		System.out.println("Supplier Code: ");
+		suppliercode1 = scan.next();
+		System.out.println("Supplier Name: ");
+		suppliername1 = scan.next();
+		System.out.println("Date: ");
+		date1 = scan.next();
+		System.out.println("Item Barcode: ");
+		barcode2 = scan.nextInt();
+		System.out.println("Item Name: Perfume Lipstick");
+		System.out.println("Quantity: ");
+		q1 = scan.nextInt();
+		
+		System.out.println("\nInformation has been saved. Here is your report.");
+		System.out.println("\nDocument Number: "+ dn); //dn
+		System.out.println("Supplier Code: " + suppliercode1);
+		System.out.println("Supplier Name: " + suppliername1);
+		System.out.println("Date: " + date1);
+		System.out.println("Item Barcode: " + barcode2);
+		System.out.println("Item Name: Perfume Lipstick");
+		System.out.println("Quantity: " + q1);
+		
+		System.out.println("\n\"Purchase Return\"");
+		System.out.println("Document Number: "); //dn2
+		dn2 = scan.next();
+		System.out.println("Supplier Code: ");
+		suppliercode2 = scan.next();
+		System.out.println("Supplier Name: ");
+		suppliername2 = scan.next();
+		System.out.println("Date: ");
+		date2 = scan.next();
+		System.out.println("Item Barcode: ");
+		barcode3 = scan.nextInt();
+		System.out.println("Item Name: Perfume Lipstick");
+		System.out.println("Quantity: ");
+		q2 = scan.nextInt();
+		System.out.println("Reason: ");
+		reason = scan.next();
+		
+		System.out.println("\nInformation has been saved. Here is your report.");
+		System.out.println("\nDocument Number: "+ dn2); //dn2
+		System.out.println("Supplier Code: " + suppliercode2);
+		System.out.println("Supplier Name: " + suppliername2);
+		System.out.println("Date: " + date2);
+		System.out.println("Item Barcode: " + barcode3);
+		System.out.println("Item Name: Perfume Lipstick");
+		System.out.println("Quantity: " + q2);
+		System.out.println("Reason: " + reason);
+		
+		int CurrentQuantity = bq1 + q1 - q2;
+		
+		//Current stock
+		System.out.println("\n\"Item\"");
+		System.out.println("Item Barcode: ");
+		barcode4 = scan.nextInt();
+		
+		System.out.println("Item Name: Perfume Lipstick"); // barcode = 20020200
+		System.out.println("Category: Lipstick");
+		System.out.println("Colour: Neon Red");
+		System.out.println("Supplier: Princess Production");
+		System.out.println("UOM: PCS");
+		System.out.println("Unit Cost:");
+		System.out.println("Unit Price: RM120");
+		System.out.println("Balance Quantity: " + CurrentQuantity);
+	}
+
+}
+
+Output:
+~WELCOME TO FAST COUNT~
+Please enter your username and password.
+Username: 
+Ang
+Password: 
+123456
+Login Sucessfully
+User: Ang
+
+"Item"
+Item Barcode: 
+20020200
+Item Name: Perfume Lipstick
+Category: Lipstick
+Colour: Neon Red
+Supplier: Princess Production
+UOM: PCS
+Unit Cost:
+Unit Price: RM120
+Balance Quantity: 20
+
+"Good Received Note"
+Document Number: 
+DO100124
+Supplier Code: 
+PP5566
+Supplier Name: 
+PrincessProduction
+Date: 
+12/12/2001
+Item Barcode: 
+20020200
+Item Name: Perfume Lipstick
+Quantity: 
+100
+
+Information has been saved. Here is your report.
+
+Document Number: DO100124
+Supplier Code: PP5566
+Supplier Name: PrincessProduction
+Date: 12/12/2001
+Item Barcode: 20020200
+Item Name: Perfume Lipstick
+Quantity: 100
+
+"Purchase Return"
+Document Number: 
+PR100056
+Supplier Code: 
+PP5566
+Supplier Name: 
+PrincessProduction
+Date: 
+12/12/2021
+Item Barcode: 
+20020200
+Item Name: Perfume Lipstick
+Quantity: 
+8
+Reason: 
+PackagingDamaged
+
+Information has been saved. Here is your report.
+
+Document Number: PR100056
+Supplier Code: PP5566
+Supplier Name: PrincessProduction
+Date: 12/12/2021
+Item Barcode: 20020200
+Item Name: Perfume Lipstick
+Quantity: 8
+Reason: PackagingDamaged
+
+"Item"
+Item Barcode: 
+20020200
+Item Name: Perfume Lipstick
+Category: Lipstick
+Colour: Neon Red
+Supplier: Princess Production
+UOM: PCS
+Unit Cost:
+Unit Price: RM120
+Balance Quantity: 112
