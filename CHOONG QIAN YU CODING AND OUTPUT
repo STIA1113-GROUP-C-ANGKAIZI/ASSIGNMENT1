@@ -1,0 +1,174 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class Beauty_Hair {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//hair donations to support campaign NCSM
+				Scanner sc=new Scanner (System.in);
+				
+				System.out.println("Hi! Welcome to the hair donation event organized by MINI salon to support the campaign of NCSM to help patients that are suffering from cancer!");
+				System.out.println("");
+				System.out.println("The public is welcome to take part in this event to show us your support!");
+				System.out.println("");
+				System.out.println("The participant who wishes to join, the fees collected will be: ");
+				System.out.println("Female : RM10");
+				System.out.println("Male   : RM7 ");
+				System.out.println("Kids   : RM5 ");
+				System.out.println("");
+				System.out.println("For every participant, the organizer, the MINI salon will donate an extra RM5 to NCSM.");
+				System.out.println("");
+				System.out.println("The total fees collected and extra donation will all give to NCSM to help the patient in need along with the donated hair.");
+				System.out.println("");
+				System.out.println("For those who are interested to join, you are required to enter your details.");
+				System.out.println("");
+				
+				System.out.println("Please enter your name:");
+				String name=sc.nextLine();
+				
+				System.out.println("Please enter your NRIC:");
+				String ic=sc.nextLine();
+				
+				System.out.println("Please enter your contact number:");
+				String num=sc.nextLine();
+				
+				System.out.println("Please enter your age:");
+				String age=sc.nextLine();
+			
+				System.out.println("Please enter your gender:");
+				String gender=sc.nextLine();
+				
+				System.out.println("");
+				System.out.println("*******************************************");
+				System.out.println("            PERSONAL DETAILS               ");
+				System.out.println("Name		: "+name);
+				System.out.println("NRIC		: "+ic);
+				System.out.println("Contact number	: "+num);
+				System.out.println("Age		: "+age);
+				System.out.println("Gender		: "+gender);
+				System.out.println("");
+				System.out.println("*******************************************");
+				System.out.println("");
+				
+				System.out.println("Do you wish to pay fees via cash or online transfer?");
+				System.out.println("If you wish to pay via online transfer, the details of the receiver bank account are:");
+				System.out.println("Maybank");
+				System.out.println("MINI salon");
+				System.out.println("173678460739");
+				System.out.println("Please type on the reference with \"Hair Donation\"");
+				
+				System.out.println("Please select your payment method: ");
+				String pay=sc.nextLine();
+				
+				System.out.println("Thank you for your support!!!");
+				//calculation for the total donation
+				System.out.println("-------------------------------------------------------------------------");
+				 System.out.println("How many female took part in this donation: ");
+				 int female=sc.nextInt();
+				
+				 System.out.println("How many male took part in this donation: ");
+				 int male=sc.nextInt();
+				 
+				 System.out.println("How many kids took part in this donation: ");
+				 int kids=sc.nextInt();
+				 System.out.println("------------------------------------------------------------------------");
+				 int a = female * 10;
+				 int b = male * 7;
+				 int c = kids * 5;
+				 int d = (female + male + kids) * 5; //the extra donation from MINI salon
+				 int total = a + b + c + d;
+				 
+				 System.out.println("Total fees collected from ");
+				 System.out.println("Female : " + a);
+				 System.out.println("Male : " + b);
+				 System.out.println("Kids : " + c);
+				 System.out.println("Extra donation from MINI salon : " + d);
+				 System.out.println("The total donation that give to NCSM: RM "+total);
+				 System.out.println("");
+				 
+				 System.out.println("How much fees collected via cash: ");
+				 double cash=sc.nextDouble();
+				 
+				 System.out.println("How much fees collected via online transfer: ");
+				 double online=sc.nextDouble();
+				 
+				 System.out.println("Total cash donations is RM"+cash);
+				 System.out.println("Total online transfer donations is RM"+online);
+				 
+				 sc.close();
+	}
+
+}
+
+
+
+Output:
+
+Hi! Welcome to the hair donation event organized by MINI salon to support the campaign of NCSM to help patients that are suffering from cancer!
+
+The public is welcome to take part in this event to show us your support!
+
+The participant who wishes to join, the fees collected will be: 
+Female : RM10
+Male   : RM7 
+Kids   : RM5 
+
+For every participant, the organizer, the MINI salon will donate an extra RM5 to NCSM.
+
+The total fees collected and extra donation will all give to NCSM to help the patient in need along with the donated hair.
+
+For those who are interested to join, you are required to enter your details.
+
+Please enter your name:
+Choong Qian Yu
+Please enter your NRIC:
+010422-03-1234
+Please enter your contact number:
+011-3456199
+Please enter your age:
+20
+Please enter your gender:
+female
+
+*******************************************
+            PERSONAL DETAILS               
+Name		: Choong Qian Yu
+NRIC		: 010422-03-1234
+Contact number	: 011-3456199
+Age		: 20
+Gender		: female
+
+*******************************************
+
+Do you wish to pay fees via cash or online transfer?
+If you wish to pay via online transfer, the details of the receiver bank account are:
+Maybank
+MINI salon
+173678460739
+Please type on the reference with "Hair Donation"
+Please select your payment method: 
+Cash
+Thank you for your support!!!
+-------------------------------------------------------------------------
+How many female took part in this donation: 
+37
+How many male took part in this donation: 
+25
+How many kids took part in this donation: 
+11
+------------------------------------------------------------------------
+Total fees collected from 
+Female : 370
+Male : 175
+Kids : 55
+Extra donation from MINI salon : 365
+The total donation that give to NCSM: RM 965
+
+How much fees collected via cash: 
+650
+How much fees collected via online transfer: 
+315
+Total cash donations is RM650.0
+Total online transfer donations is RM315.0
